@@ -5,25 +5,25 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Hello World! &#8211; Andrzej Łapiński</title>
-<meta name="description" content="This is my first post here on this blog, I am very excited! :)">
-<meta name="keywords" content="misc">
+<title>Post with a Background Image &#8211; Andrzej Łapiński</title>
+<meta name="description" content="Sample post with a background image CSS override.">
+<meta name="keywords" content="sample post">
 
 
 
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World!">
-<meta property="og:description" content="This is my first post here on this blog, I am very excited! :)">
-<meta property="og:url" content="/misc/hello-world/">
+<meta property="og:title" content="Post with a Background Image">
+<meta property="og:description" content="Sample post with a background image CSS override.">
+<meta property="og:url" content="/background-image/">
 <meta property="og:site_name" content="Andrzej Łapiński">
 
 
 
 
 
-<link rel="canonical" href="/misc/hello-world/">
+<link rel="canonical" href="/background-image/">
 <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Andrzej Łapiński Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -55,6 +55,10 @@
 <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/apple-touch-icon-144x144-precomposed.png">
 
+
+
+
+<style type="text/css">body {background-image:url(/images/triangular.png);}</style>
 
 
 </head>
@@ -122,9 +126,9 @@
     <header class="header-title">
       <div class="header-title-wrap">
         
-          <h1 class="entry-title"><a href="/misc/hello-world/" rel="bookmark" title="Hello World!">Hello World!</a></h1>
+          <h1 class="entry-title"><a href="/background-image/" rel="bookmark" title="Post with a Background Image">Post with a Background Image</a></h1>
         
-        <h2><span class="entry-date date published"><time datetime="2015-06-22T21:59:40+01:00">June 22, 2015</time></span></h2>
+        <h2><span class="entry-date date published"><time datetime="2013-10-26T00:00:00+01:00">October 26, 2013</time></span></h2>
         
         <p class="entry-reading-time">
           <i class="fa fa-clock-o"></i>
@@ -135,16 +139,25 @@
       </div><!-- /.header-title-wrap -->
     </header>
     <div class="entry-content">
-      <p>Here goes the text, <em>indent</em> etc.</p>
+      <p>Here be a sample post with a custom background image. To utilize this “feature” just add the following YAML to a post’s front matter.</p>
+
+<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span class="l-Scalar-Plain">image</span><span class="p-Indicator">:</span>
+  <span class="l-Scalar-Plain">background</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">filename.png</span></code></pre></div>
+
+<p>This little bit of YAML makes the assumption that your background image asset is in the <code>/images</code> folder. If you place it somewhere else or are hotlinking from the web, just include the full http(s):// URL. Either way you should have a background image that is tiled.</p>
+
+<p>If you want to set a background image for the entire site just add <code>background: filename.png</code> to your <code>_config.yml</code> and BOOM — background images on every page!</p>
+
+<div xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/" about="http://subtlepatterns.com" class="notice">Background images from <span property="dct:title">Subtle Patterns</span> (<a rel="cc:attributionURL" property="cc:attributionName" href="http://subtlepatterns.com">Subtle Patterns</a>) / <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></div>
 
       <footer class="entry-meta">
-        <span class="entry-tags"><a href="/tags/#misc" title="Pages tagged misc" class="tag"><span class="term">misc</span></a></span>
+        <span class="entry-tags"><a href="/tags/#sample post" title="Pages tagged sample post" class="tag"><span class="term">sample post</span></a></span>
         
         <div class="social-share">
   <ul class="socialcount socialcount-small inline-list">
-    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=/misc/hello-world/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
-    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=/misc/hello-world/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
-    <li class="googleplus"><a href="https://plus.google.com/share?url=/misc/hello-world/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
+    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=/background-image/" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
+    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=/background-image/" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
+    <li class="googleplus"><a href="https://plus.google.com/share?url=/background-image/" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
   </ul>
 </div><!-- /.social-share -->
       </footer>
@@ -153,11 +166,11 @@
     <div class="read-more">
   
     <div class="read-more-header">
-      <a href="/background-image/" class="read-more-btn">Read More</a>
+      <a href="/code-highlighting-post/" class="read-more-btn">Read More</a>
     </div><!-- /.read-more-header -->
     <div class="read-more-content">
-      <h3><a href="/background-image/" title="Post with a Background Image">Post with a Background Image</a></h3>
-      <p>Sample post with a background image CSS override. <a href="/background-image/">Continue reading</a></p>
+      <h3><a href="/misc/hello-world/" title="Hello World!">Hello World!</a></h3>
+      <p>This is my first post here on this blog, I am very excited! :) <a href="/misc/hello-world/">Continue reading</a></p>
     </div><!-- /.read-more-content -->
   
   <div class="read-more-list">
